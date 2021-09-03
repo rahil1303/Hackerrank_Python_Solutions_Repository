@@ -21,3 +21,12 @@ if __name__ == "__main__":
   sub_string = input().strip()
   count = count_substring(string,sub_string)
   print(count)
+  
+  
+ #Method 02
+
+def count_substring(string, sub_string):
+        count = 0
+        for i in range(len(string)):
+                count += string.startswith(sub_string, i)
+        return count
