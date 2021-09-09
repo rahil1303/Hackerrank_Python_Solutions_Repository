@@ -5,3 +5,6 @@ def print_rangoli(size):
     if x>=0:
       line = mystr[size:x:-1]+mystr[x:size]
       print("--"*x+"-".join(line)+"--"*x
+if __name__ = "__main__":
+            n = int(input())
+            print_rangoli(n)
