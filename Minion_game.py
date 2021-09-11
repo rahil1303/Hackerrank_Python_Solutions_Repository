@@ -4,9 +4,9 @@ k = 0
 si = 0
 for i in range(len(s)):
   if s[i] in vowels:
-    k += (len(s) - 1)
+    k += (len(s) - i)
    else:
-    si += (len(s) - 1)
+    si += (len(s) - i)
 if k > s:
   print("Kevin",k)
 elif k < s:
